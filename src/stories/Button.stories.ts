@@ -51,9 +51,18 @@ export const Small: Story = {
   },
 };
 
-export const Test: Story = {
+export const All: Story = {
   args: {
     primary: false,
     label: "Button"
+  },
+  parameters: {
+    variants: {
+      // Enable variants for this story. Can still be toggled off via the toolbar.
+      enable: true,
+      // Include only the `size` and `primary` props.
+      include: ['size', 'primary'],
+    }
   }
 };
+
