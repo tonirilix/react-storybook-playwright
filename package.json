@@ -12,7 +12,7 @@
     "build-storybook": "storybook build",
     "test:e2e": "playwright test --ui",
     "test:e2e:headless": "playwright test",
-    "postinstall": "playwright install --with-deps"
+    "setup": "playwright install --with-deps"
   },
   "dependencies": {
     "react": "^18.3.1",
