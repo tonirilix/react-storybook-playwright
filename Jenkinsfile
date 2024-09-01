@@ -14,12 +14,6 @@ pipeline {
             }
         }
 
-        stage('Install browsers') {
-            steps {
-                sh 'npx playwright install --with-deps'
-            }
-        }
-
         stage('Run Playwright') {
             steps {
                 sh 'npm run test:e2e:headless'
